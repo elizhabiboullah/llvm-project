@@ -72,7 +72,7 @@ LIBC_INLINE int file_write_hook(cpp::string_view new_str, void *fp) {
   if (write_result.has_error())
     return -write_result.error;
 
-  // In case short write occured or error was not set on FileIOResult for some
+  // In case short write occurred or error was not set on FileIOResult for some
   // reason.
   if (write_result.value != new_str.size() ||
       internal::ferror_unlocked(target_file))

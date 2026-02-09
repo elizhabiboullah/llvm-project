@@ -295,7 +295,7 @@ class GCNScheduleDAGMILive final : public ScheduleDAGMILive {
 
   // The live out registers per region. These are internally stored as a map of
   // the initial last region instruction to region live out registers, but can
-  // be retreived with the regionIdx by calls to getLiveRegsForRegionIdx.
+  // be retrieved with the regionIdx by calls to getLiveRegsForRegionIdx.
   RegionPressureMap RegionLiveOuts;
 
   // Return current region pressure.

@@ -487,7 +487,7 @@ template <bool ExcludeChain> struct EffectiveOperands {
     FirstIndex = TotalNumOps;
     for (unsigned I = 0; I < TotalNumOps; ++I) {
       // Count the number of non-chain and non-glue nodes (we ignore chain
-      // and glue by default) and retreive the operand index offset.
+      // and glue by default) and retrieve the operand index offset.
       EVT VT = N->getOperand(I).getValueType();
       if (VT != MVT::Glue && VT != MVT::Other) {
         ++Size;

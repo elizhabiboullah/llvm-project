@@ -676,7 +676,7 @@ public:
   ///               descriptor.)
   ///
   /// \return The insertion point immediately after the generated code, or an
-  /// error if any occured.
+  /// error if any occurred.
   using TaskDupCallbackTy = function_ref<Expected<InsertPointTy>(
       InsertPointTy AllocaIP, InsertPointTy CodeGenIP, Value *DestPtr,
       Value *SrcPtr)>;

@@ -122,7 +122,7 @@ private:
         __state_after_lock(__current_state), // state after lock. Usually it should be __current_state | _LockedBit.
                                              // Some use cases need to set other bits at the same time as an atomic
                                              // operation therefore we accept a function
-        __locked_ordering,        // sucessful exchange order. Usually it should be std::memory_order_acquire.
+        __locked_ordering,        // successful exchange order. Usually it should be std::memory_order_acquire.
                                   // Some use cases need more strict ordering therefore we accept it as a parameter
         std::memory_order_relaxed // fail to exchange order. We don't need any ordering as we are going back to the
                                   // inner while loop

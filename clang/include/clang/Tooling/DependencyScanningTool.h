@@ -150,7 +150,7 @@ public:
   /// @brief This method finializes the compiler instance. It finalizes the
   ///        diagnostics and deletes the compiler instance. Call this method
   ///        once all names for a same commandline are scanned.
-  /// @return Error if an error occured during finalization.
+  /// @return Error if an error occurred during finalization.
   llvm::Error finalizeCompilerInstanceWithContextOrError();
 
   llvm::vfs::FileSystem &getWorkerVFS() const { return Worker.getVFS(); }

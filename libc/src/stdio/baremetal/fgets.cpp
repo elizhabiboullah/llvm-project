@@ -37,7 +37,7 @@ LLVM_LIBC_FUNCTION(char *, fgets,
     str[i] = c;
   }
 
-  // If the requested read size makes no sense, an error occured, or no bytes
+  // If the requested read size makes no sense, an error occurred, or no bytes
   // were read due to an EOF, then return nullptr and don't write the null byte.
   if (i == 0)
     return nullptr;

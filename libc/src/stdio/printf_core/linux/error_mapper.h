@@ -17,7 +17,7 @@ namespace LIBC_NAMESPACE_DECL {
 namespace printf_core {
 
 LIBC_INLINE static int internal_error_to_errno(int internal_error) {
-  // System error occured, return error as is.
+  // System error occurred, return error as is.
   if (internal_error < 1001 && internal_error > 0) {
     return internal_error;
   }

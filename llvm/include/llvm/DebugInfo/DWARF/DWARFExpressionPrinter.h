@@ -36,7 +36,7 @@ LLVM_ABI void printDwarfExpression(const DWARFExpression *E, raw_ostream &OS,
 
 /// Print the expression in a format intended to be compact and useful to a
 /// user, but not perfectly unambiguous, or capable of representing every
-/// valid DWARF expression. Returns true if the expression was sucessfully
+/// valid DWARF expression. Returns true if the expression was successfully
 /// printed.
 ///
 /// \param E to be printed

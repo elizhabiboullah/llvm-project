@@ -699,7 +699,7 @@ public:
   /// shared library load state.
   ///
   /// \return
-  ///    A status object indicating if the operation was sucessful or not.
+  ///    A status object indicating if the operation was successful or not.
   virtual llvm::Error LoadModules() {
     return llvm::make_error<llvm::StringError>("Not implemented.",
                                                llvm::inconvertibleErrorCode());

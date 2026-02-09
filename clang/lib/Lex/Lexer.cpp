@@ -1876,7 +1876,7 @@ bool Lexer::tryConsumeIdentifierUTF8Char(const char *&CurPtr, Token &Result) {
                                makeCharRange(*this, CharStart, UnicodePtr));
   }
 
-  // Once we sucessfully parsed some UTF-8,
+  // Once we successfully parsed some UTF-8,
   // calling ConsumeChar ensures the NeedsCleaning flag is set on the token
   // being lexed, and that warnings about trailing spaces are emitted.
   ConsumeChar(CurPtr, FirstCodeUnitSize, Result);

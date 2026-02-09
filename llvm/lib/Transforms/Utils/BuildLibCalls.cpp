@@ -1476,7 +1476,7 @@ FunctionCallee llvm::getOrInsertLibFunc(Module *M, const TargetLibraryInfo &TLI,
   // argument extensions is typically done by the front end but when an
   // optimizer is building a library call on its own it has to take care of
   // this. Each such generated function must be handled here with sign or
-  // zero extensions as needed.  F is retreived with cast<> because we demand
+  // zero extensions as needed.  F is retrieved with cast<> because we demand
   // of the caller to have called isLibFuncEmittable() first.
   Function *F = cast<Function>(C.getCallee());
   assert(F->getFunctionType() == T && "Function type does not match.");

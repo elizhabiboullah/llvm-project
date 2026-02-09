@@ -108,7 +108,7 @@ RootSignatureToken RootSignatureLexer::lexToken() {
 #define ENUM(NAME, LIT) Switch.CaseLower(LIT, TokenKind::en_##NAME);
 #include "clang/Lex/HLSLRootSignatureTokenKinds.def"
 
-  // Then attempt to retreive a string from it
+  // Then attempt to retrieve a string from it
   Result.TokKind = Switch.Default(TokenKind::invalid);
   advanceBuffer(TokSpelling.size());
   return Result;

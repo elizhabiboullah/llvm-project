@@ -3050,7 +3050,7 @@ public:
 
     ProcessSP process_sp(target->GetProcessSP());
     if (!process_sp) {
-      SetError("Attached sucessfully but target has no process.");
+      SetError("Attached successfully but target has no process.");
       return;
     }
 

@@ -576,7 +576,7 @@ struct ControlDropUnitDims {
 
   /// Instances of this type are used to control how result values are expanded
   /// into their original shape after dropping unit extent dimensions. Next to
-  /// the control construct, rewriter and location, the function recieves the
+  /// the control construct, rewriter and location, the function receives the
   /// result value, the original value to replace and and information on how the
   /// new dimensions were grouped.
   /// The function needs to insert the necessary operations to expand the

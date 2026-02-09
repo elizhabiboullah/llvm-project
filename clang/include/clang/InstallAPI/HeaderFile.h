@@ -102,7 +102,7 @@ public:
     /// For parsing of headers based on ordering,
     /// group by type, then whether its an umbrella.
     /// Capture 'extra' headers last.
-    /// This optimizes the chance of a sucessful parse for
+    /// This optimizes the chance of a successful parse for
     /// headers that violate IWYU.
     if (isExtra() && Other.isExtra())
       return std::tie(Type, Umbrella) < std::tie(Other.Type, Other.Umbrella);
@@ -112,7 +112,7 @@ public:
   }
 };
 
-/// Glob that represents a pattern of header files to retreive.
+/// Glob that represents a pattern of header files to retrieve.
 class HeaderGlob {
 private:
   std::string GlobString;

@@ -607,7 +607,7 @@ protected:
   /// Apply \p Mapping to \p MI. \p RepairPts represents the different
   /// mapping action that need to happen for the mapping to be
   /// applied.
-  /// \return True if the mapping was applied sucessfully, false otherwise.
+  /// \return True if the mapping was applied successfully, false otherwise.
   bool applyMapping(MachineInstr &MI,
                     const RegisterBankInfo::InstructionMapping &InstrMapping,
                     SmallVectorImpl<RepairingPlacement> &RepairPts);

@@ -983,7 +983,7 @@ LLVM_ABI Expected<file_t> openNativeFile(const Twine &Name,
                                          unsigned Mode = 0666);
 
 /// Converts from a Posix file descriptor number to a native file handle.
-/// On Windows, this retreives the underlying handle. On non-Windows, this is a
+/// On Windows, this retrieves the underlying handle. On non-Windows, this is a
 /// no-op.
 LLVM_ABI file_t convertFDToNativeFile(int FD);
 
